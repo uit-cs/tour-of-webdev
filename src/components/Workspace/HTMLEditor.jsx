@@ -4,12 +4,15 @@ import { emmetHTML } from 'emmet-monaco-es'
 const HTMLEditor = ({ value, setValue }) => {
 	const exampleCode = '<!-- Code here -->'
 
-	const handleEditorDidMount = async (editor, monaco) => {
+	const handleEditorDidMount = (editor, monaco) => {
 		emmetHTML(monaco)
 	}
 
 	return (
-		<div className='h-[calc(50%-2px)] w-full'>
+		<div className='w-full h-[50%] flex flex-col'>
+			<div className='flex'>
+				<span className='py-1 px-3 bg-white'>index.html</span>
+			</div>
 			<Editor
 				theme={'vs'}
 				language={'html'}

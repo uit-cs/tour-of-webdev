@@ -1,6 +1,6 @@
 const Preview = ({ value }) => {
     return (
-        <div className="h-[calc(50%-2px)] bg-white">
+        <div className="bg-white h-[50%]">
             <iframe title="preview" className="h-full w-full pointer-events-none" srcDoc={value}></iframe>
         </div>
     );
