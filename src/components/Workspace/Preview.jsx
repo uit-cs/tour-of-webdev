@@ -1,7 +1,7 @@
 const Preview = ({ value }) => {
     return (
-        <div className="h-[50%] w-full">
-            <iframe className="h-full w-full pointer-events-none" srcDoc={value}></iframe>
+        <div className="h-[calc(50%-2px)] bg-white">
+            <iframe title="preview" className="h-full w-full pointer-events-none" srcDoc={value}></iframe>
         </div>
     );
 }
