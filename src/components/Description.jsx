@@ -1,12 +1,32 @@
 const Description = () => {
 	return (
 		<div className='bg-white overflow-y-auto p-6 w-[50%]'>
+			<h1 className='text-2xl font-bold mb-4'>Hello, World</h1>
+			<p>Hey there, welcome to our Tour of WebDev! 👋</p>
 			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-				numquam totam velit fugiat. Rem magni, harum atque incidunt
-				deserunt animi nobis alias ea eius veritatis, fuga vitae commodi
-				ab. Porro!
+				We are so excited to have you on board for this hands-on
+				adventure into the world of web development.
 			</p>
+			<p>
+				Our main focus will be on creating a personalized information
+				card, allowing you to gain a quick but comprehensive view of
+				basic web development. We will be using HTML and CSS to create
+				our card.{' '}
+			</p>
+			<p>
+				The tour is divided into a list of modules that you can view by
+				clicking on the menu icon on the top right of the page.{' '}
+			</p>
+			<p>
+				As we go along, you will find a mix of instructions, exercises,
+				and bits of code to play with.
+			</p>
+			<p>
+				By the end of our tour, you will have the skills to confidently
+				create your own personal information card from scratch and
+				receive a mission from us to complete.
+			</p>
+			<p>We hope you enjoy the tour! Happy coding! 🚀</p>
 		</div>
 	)
 }
