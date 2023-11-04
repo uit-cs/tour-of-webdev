@@ -54,7 +54,7 @@ const Nav = () => {
 					<Link
 						href='/workspace'
 						className='text-white font-bold ml-4 text-xl'>
-						A Tour of HTML
+						A Tour Of Code
 					</Link>
 				</div>
 				<div>
