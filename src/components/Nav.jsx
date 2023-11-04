@@ -21,7 +21,7 @@ const Nav = () => {
 	}, [])
 
 	function showTOC() {
-		tocRef.current.classList.toggle('hidden')
+		tocRef.current.classList.toggle('translate-x-[500px]')
 	}
 
 	function closeTOC(e) {
@@ -32,7 +32,7 @@ const Nav = () => {
 			!navRef.current.contains(e.target)
 		) {
 			// Clicked outside the side navigation bar, close it
-			tocRef.current.classList.add('hidden')
+			tocRef.current.classList.add('translate-x-[500px]')
 		}
 	}
 
@@ -40,7 +40,7 @@ const Nav = () => {
 		<>
 			<nav
 				ref={navRef}
-				className='flex flex-row justify-between items-center bg-[#00476F] px-6 py-2 fixed top-0 left-0 right-0 z-50'>
+				className='flex flex-row justify-between items-center bg-blue px-6 py-2 fixed top-0 left-0 right-0 z-50'>
 				<div className='flex flex-row items-center'>
 					<Link href='/'>
 						<Image
@@ -54,7 +54,7 @@ const Nav = () => {
 					<Link
 						href='/workspace'
 						className='text-white font-bold ml-4 text-xl'>
-						A Tour Of Code
+						A Tour of WebDev
 					</Link>
 				</div>
 				<div>

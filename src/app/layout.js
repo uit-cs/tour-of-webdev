@@ -1,9 +1,10 @@
 import Nav from '@/components/Nav'
+
 import './globals.css'
 
 export const metadata = {
-	title: 'Trainee Program - Tour of Code',
-	description: 'A tour of code for Trainee Program adventurers',
+	title: 'Trainee Program - A Tour of WebDev',
+	description: 'A tour of web development made for adventurers.',
 }
 
 export default function RootLayout({ children }) {

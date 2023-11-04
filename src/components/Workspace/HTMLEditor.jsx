@@ -4,15 +4,14 @@ import { emmetHTML } from 'emmet-monaco-es'
 const HTMLEditor = ({ value, setValue }) => {
 	const exampleCode = '<!-- Code here -->'
 
-	const handleEditorDidMount = (editor, monaco) => {
+	const handleEditorDidMount = async (editor, monaco) => {
 		emmetHTML(monaco)
 	}
 
 	return (
 		<div className='h-[calc(50%-2px)] w-full'>
 			<Editor
-				className=''
-				theme={'vs-dark'}
+				theme={'vs'}
 				language={'html'}
 				defaultValue={exampleCode}
 				onMount={handleEditorDidMount}

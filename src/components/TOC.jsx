@@ -4,9 +4,9 @@ const TableOfContents = ({ tocRef }) => {
 	return (
 		<div
 			ref={tocRef}
-			className='toc flex flex-col justify-start bg-[#E0EBF5] w-[500px] fixed top-[56px] right-0 bottom-0 z-50 overflow-y-auto hidden'>
+			className='flex flex-col justify-start bg-lightblue w-[500px] fixed top-[56px] right-0 bottom-0 z-50 overflow-y-auto transition-all duration-300 ease-in translate-x-[500px]'>
 			<div>
-				<span className='text-[#00476F] text-xl px-2 py-2 block'>
+				<span className='text-darkblue text-xl px-2 py-2 block'>
 					Using the tour
 				</span>
 				<ul className='bg-white'>
@@ -19,7 +19,7 @@ const TableOfContents = ({ tocRef }) => {
 				</ul>
 			</div>
 			<div>
-				<span className='text-[#00476F] text-xl px-2 py-2 block'>
+				<span className='text-darkblue text-xl px-2 py-2 block'>
 					Basics
 				</span>
 				<ul className='bg-white'>
