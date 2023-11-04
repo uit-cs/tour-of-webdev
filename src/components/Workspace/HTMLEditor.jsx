@@ -14,7 +14,7 @@ const HTMLEditor = ({ value, setValue }) => {
 	}
 
 	return (
-		<div className="h-[50%] w-full">
+		<div className='h-[50%] w-full'>
 			<Editor
 				className=''
 				theme={'vs-dark'}
@@ -24,9 +24,9 @@ const HTMLEditor = ({ value, setValue }) => {
 				onChange={(value) => setValue(value)}
 				options={{
 					minimap: {
-						enabled: false
+						enabled: false,
 					},
-					contextmenu: false
+					contextmenu: false,
 				}}
 			/>
 		</div>
