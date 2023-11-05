@@ -1,7 +1,7 @@
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
-const TableOfContents = ({ showToc, setShowToc }) => {
+const TableOfContents = ({ showToc, setShowToc, module }) => {
 	return (
 		<div>
 			<div
