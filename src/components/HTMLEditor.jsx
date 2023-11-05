@@ -1,24 +1,20 @@
+'use client'
 import Editor from '@monaco-editor/react'
 import { emmetHTML } from 'emmet-monaco-es'
 
-const HTMLEditor = ({ value, setValue }) => {
-	const exampleCode = '<!-- Code here -->'
-
+const HTMLEditor = ({ htmlCode, setHtmlCode }) => {
 	const handleEditorDidMount = (editor, monaco) => {
 		emmetHTML(monaco)
 	}
 
 	return (
-		<div className='w-full h-[50%] flex flex-col'>
-			<div className='flex'>
-				<span className='py-1 px-3 bg-white'>index.html</span>
-			</div>
+		<div className='flex flex-col'>
 			<Editor
 				theme={'vs'}
 				language={'html'}
-				defaultValue={exampleCode}
+				defaultValue={htmlCode}
 				onMount={handleEditorDidMount}
-				onChange={(value) => setValue(value)}
+				onChange={(value) => setHtmlCode(value)}
 				options={{
 					minimap: {
 						enabled: false,

@@ -2,46 +2,13 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import TableOfContents from '@/components/TOC'
 import { Bars3Icon } from '@heroicons/react/24/outline'
-import { useEffect, useRef } from 'react'
 
-const Nav = () => {
-	const tocRef = useRef(null)
-	const navRef = useRef(null)
-
-	useEffect(() => {
-		// Add event listener to the document object
-		document.addEventListener('mousedown', closeTOC)
-
-		// Remove event listener when the component unmounts
-		return () => {
-			document.removeEventListener('mousedown', closeTOC)
-		}
-	}, [])
-
-	function showTOC() {
-		tocRef.current.classList.toggle('translate-x-[500px]')
-	}
-
-	function closeTOC(e) {
-		if (
-			tocRef.current &&
-			!tocRef.current.contains(e.target) &&
-			navRef.current &&
-			!navRef.current.contains(e.target)
-		) {
-			// Clicked outside the side navigation bar, close it
-			tocRef.current.classList.add('translate-x-[500px]')
-		}
-	}
-
+const Nav = ({ setShowToc }) => {
 	return (
-		<>
-			<nav
-				ref={navRef}
-				className='flex flex-row justify-between items-center bg-blue px-6 py-2 fixed top-0 left-0 right-0 z-50'>
-				<div className='flex flex-row items-center'>
+		<nav className='relative flex flex-col h-[48px] w-full bg-blue px-6 z-10'>
+			<div className='flex w-full h-full justify-between items-center'>
+				<div className='flex h-full flex-row items-center gap-4'>
 					<Link href='/'>
 						<Image
 							src='/white-logo.png'
@@ -53,19 +20,19 @@ const Nav = () => {
 					</Link>
 					<Link
 						href='/workspace'
-						className='text-white font-bold ml-4 text-xl'>
+						className='text-white font-medium'>
 						A Tour of WebDev
 					</Link>
 				</div>
-				<div>
+
+				<div className='flex h-full flex-row items-center gap-4'>
 					<Bars3Icon
-						className='h-6 w-6 text-white font-bold hover:cursor-pointer'
-						onClick={showTOC}
+						className='h-6 w-6 text-white font-medium hover:cursor-pointer'
+						onClick={() => setShowToc(true)}
 					/>
 				</div>
-			</nav>
-			<TableOfContents tocRef={tocRef} />
-		</>
+			</div>
+		</nav>
 	)
 }
 
