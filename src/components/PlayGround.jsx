@@ -8,7 +8,7 @@ const PlayGround = () => {
 
 	return (
 		<div className='flex h-full flex-col min-w-[30vw]'>
-			<div className='flex h-full w-full flex-col bg-blue rounded-md overflow-hidden'>
+			<div className='flex h-full w-full flex-col rounded-md overflow-hidden'>
 				<Split
 					className='split h-full flex-col'
 					direction='vertical'>

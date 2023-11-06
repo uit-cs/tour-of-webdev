@@ -4,17 +4,17 @@ import Main from './Main'
 import TableOfContents from './TOC'
 import { useState } from 'react'
 
-const Workspace = ({ module }) => {
+const Workspace = ({ section }) => {
 	const [showToc, setShowToc] = useState(false)
 
 	return (
-		<div className='flex flex-col h-full w-full bg-lightblue'>
+		<div className='flex flex-col h-full w-full'>
 			<Nav setShowToc={setShowToc} />
-			<Main module={module} />
+			<Main section={section} />
 			<TableOfContents
 				showToc={showToc}
 				setShowToc={setShowToc}
-				module={module}
+				section={section}
 			/>
 		</div>
 	)

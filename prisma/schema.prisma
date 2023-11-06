@@ -8,10 +8,11 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
-model Module {
+model Section {
   id        Int      @id @default(autoincrement())
   title     String
   content   String
+  code      String
   published Boolean  @default(false)
   createdAt     DateTime  @default(now()) @map(name: "created_at")
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
