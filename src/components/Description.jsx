@@ -2,10 +2,10 @@ const Description = ({ module }) => {
 
 	return (
 		<div className='flex h-full flex-col'>
-			<div className='flex h-full flex-col bg-blue rounded-md overflow-hidden'>
+			<div className='flex h-full flex-col bg-black rounded-md overflow-hidden border-gray border-[1px]'>
 				<div className='flex flex-col h-full w-full overflow-y-auto'>
-					<h1 className='text-2xl font-bold mb-2'>{module.title}</h1>
-					<div id='content' className='px-4 py-4'>{module.content}</div>
+					<h1 className='text-2xl font-bold py-4 px-4'>{module.title}</h1>
+					<div id='content' className='px-4 pt-2 pb-6' dangerouslySetInnerHTML={{ __html: module.content }}></div>
 				</div>
 			</div>
 		</div>

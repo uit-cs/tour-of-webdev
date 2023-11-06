@@ -9,15 +9,14 @@ module.exports = {
     extend: {
       colors: {
         white: '#F0F1F2',
-        black: '#37352f',
-        blue: '#569cd6',
-        darkblue: '#00476F',
       },
       backgroundColor: {
-        white: '#ffffff',
-        black: '#000000',
-        blue: '#569cd6',
-        lightblue: '#E0EBF5',
+        black: '#1C2128',
+        gray: '#22272E',
+        white: '#F0F1F2',
+      },
+      borderColor: {
+        gray: '#444C56',
       },
     },
   },

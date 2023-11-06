@@ -6,7 +6,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const Nav = ({ setShowToc }) => {
 	return (
-		<nav className='relative flex flex-col h-[48px] w-full bg-blue px-6 z-10'>
+		<nav className='relative flex flex-col h-[48px] w-full bg-black px-6 z-10 border-gray border-b-[1px]'>
 			<div className='flex w-full h-full justify-between items-center'>
 				<div className='flex h-full flex-row items-center gap-4'>
 					<Link href='/'>

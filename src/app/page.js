@@ -1,9 +1,5 @@
-import Workspace from '@/components/Workspace'
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-	return (
-		<div className='flex flex-col h-full'>
-			<Workspace />
-		</div>
-	)
+	redirect('/module/1')
 }

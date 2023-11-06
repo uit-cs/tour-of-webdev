@@ -16,7 +16,7 @@ const PlayGround = () => {
 						htmlCode={htmlCode}
 						setHtmlCode={setHtmlCode}
 					/>
-					<div className='flex flex-col bg-lightblue'>
+					<div className='flex flex-col bg-[#fff]'>
 						<iframe
 							title='preview'
 							className='h-full w-full'

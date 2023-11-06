@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 	})
 
 	return modules.map((module) => ({
-		id: module.id,
+		id: module.id.toString(),
 	}))
 }
 
