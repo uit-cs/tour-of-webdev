@@ -8,7 +8,7 @@ const HTMLEditor = ({ htmlCode, setHtmlCode }) => {
 			inherit: true,
 			rules: [],
 			colors: {
-				'editor.background': '#1C2128',
+				'editor.background': '#22272E',
 			},
 		})
 		monaco.editor.setTheme('dark')
@@ -21,7 +21,7 @@ const HTMLEditor = ({ htmlCode, setHtmlCode }) => {
 			<Editor
 				theme={'vs-dark'}
 				language={'html'}
-				defaultValue={htmlCode}
+				value={htmlCode}
 				onMount={handleEditorDidMount}
 				onChange={(value) => setHtmlCode(value)}
 				options={{

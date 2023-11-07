@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Split from 'react-split'
 import HTMLEditor from './HTMLEditor'
 
-const PlayGround = () => {
+const PlayGround = ({ sectionCode }) => {
 	const [htmlCode, setHtmlCode] = useState('<!-- index.html -->')
 
 	return (

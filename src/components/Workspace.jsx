@@ -4,7 +4,7 @@ import Main from './Main'
 import TableOfContents from './TOC'
 import { useState } from 'react'
 
-const Workspace = ({ section }) => {
+const Workspace = ({ section, sectionsList }) => {
 	const [showToc, setShowToc] = useState(false)
 
 	return (
@@ -14,7 +14,8 @@ const Workspace = ({ section }) => {
 			<TableOfContents
 				showToc={showToc}
 				setShowToc={setShowToc}
-				section={section}
+				sectionId={section.id}
+				sectionsList={sectionsList}
 			/>
 		</div>
 	)
