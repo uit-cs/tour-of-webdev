@@ -7,7 +7,7 @@ const TableOfContents = ({ showToc, setShowToc, sectionId, sectionsList }) => {
 			<div
 				className={`${
 					showToc ? 'fixed' : 'hidden'
-				} z-30 inset-0 opacity-20 bg-white`}
+				} z-30 inset-0 opacity-10 bg-white`}
 				onClick={() => setShowToc(false)}></div>
 
 			<div

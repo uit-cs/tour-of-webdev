@@ -3,7 +3,7 @@ import Workspace from '@/components/Workspace'
 import { cache } from 'react'
 
 export default async function Section({ params }) {
-	const section = await getSectionById(params)
+	const section = await getSectionById(params.id)
 	const sectionsList = await getAllSections()
 
 	return (
@@ -23,11 +23,11 @@ export async function generateStaticParams() {
 	}))
 }
 
-export const getSectionById = cache(async (params) => {
+export const getSectionById = cache(async (id) => {
 	const section = await prisma.section.findUnique({
 		where: {
 			published: true,
-			id: Number(params.id),
+			id: Number(id),
 		},
 	})
 
