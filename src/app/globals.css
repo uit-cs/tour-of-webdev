@@ -17,17 +17,22 @@ body {
 	color: #F0F1F2;
 }
 
-h2 {
+#content h2 {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: bold;
 	margin-bottom: 16px;
 }
 
-p {
+#content p {
 	font-size: 16px;
 	line-height: 1.5;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
+}
+
+#content a {
+	font-size: 16px;
+	color: #34d399;
 }
 
 .split {
@@ -47,7 +52,4 @@ p {
 .gutter.gutter-vertical {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
     cursor: row-resize;
-}
-p {
-	margin-bottom: 1rem;
 }
