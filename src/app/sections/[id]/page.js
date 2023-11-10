@@ -39,6 +39,9 @@ export const getAllSections = cache(async () => {
 		where: {
             published: true,
 		},
+		orderBy: {
+			id: 'asc',
+		}
 	})
 
 	return sections

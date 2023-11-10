@@ -53,3 +53,13 @@ body {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
     cursor: row-resize;
 }
+
+#content pre {
+	background-color: #1C2128;
+	margin-bottom: 16px;
+	overflow: auto;
+}
+
+#content img {
+	margin-bottom: 16px;
+}
