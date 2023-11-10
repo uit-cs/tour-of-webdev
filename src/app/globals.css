@@ -60,6 +60,19 @@ body {
 	overflow: auto;
 }
 
-#content img {
+#content img, #content ul {
 	margin-bottom: 16px;
+}
+
+#content .css {
+	white-space: pre-line;
+}
+
+#content li {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+#content code {
+	background-color: #1C2128;
 }
