@@ -28,7 +28,7 @@ const TableOfContents = ({ showToc, setShowToc, sectionId, sectionsList }) => {
 								key={current.id}
 								className={`block px-4 py-2 ${
 									sectionId === current.id
-										? 'text-emerald-400'
+										? 'text-[#38BDF8] font-bold'
 										: ''
 								}`}>
 								<Link href={`/sections/${current.id}`}>{`${current.id}. ${current.title}`}</Link>

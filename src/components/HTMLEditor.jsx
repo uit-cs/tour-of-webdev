@@ -13,7 +13,7 @@ const HTMLEditor = ({ htmlCode, setHtmlCode }) => {
 			inherit: true,
 			rules: [],
 			colors: {
-				'editor.background': '#22272E',
+				'editor.background': '#1E293B',
 			},
 		})
 		monaco.editor.setTheme('dark')

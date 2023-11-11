@@ -11,12 +11,12 @@ module.exports = {
         white: '#F0F1F2',
       },
       backgroundColor: {
-        black: '#1C2128',
-        gray: '#22272E',
+        black: '#0F172A',
+        gray: '#1E293B',
         white: '#F0F1F2',
       },
       borderColor: {
-        gray: '#444C56',
+        gray: '#ffffff1a',
       },
     },
   },

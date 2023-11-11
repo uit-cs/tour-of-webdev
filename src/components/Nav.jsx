@@ -19,7 +19,7 @@ const Nav = ({ setShowToc }) => {
 						/>
 					</Link>
 					<Link
-						href='/workspace'
+						href='/'
 						className='text-white font-medium'>
 						A Tour of WebDev
 					</Link>

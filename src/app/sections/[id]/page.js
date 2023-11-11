@@ -1,15 +1,18 @@
 import prisma from '@/lib/prisma'
 import Workspace from '@/components/Workspace'
-import { cache } from 'react'
+import { Suspense, cache } from 'react'
+import Loading from '../loading'
 
 export default async function Section({ params }) {
 	const section = await getSectionById(params.id)
 	const sectionsList = await getAllSections()
 
 	return (
-		<div className='flex flex-col h-full'>
-			<Workspace section={section} sectionsList={sectionsList} />
-		</div>
+		<Suspense fallback={<Loading />}>
+			<div className='flex flex-col h-full'>
+				<Workspace section={section} sectionsList={sectionsList} />
+			</div>
+		</Suspense>
 	)
 }
 
